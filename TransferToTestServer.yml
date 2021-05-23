@@ -1,0 +1,8 @@
+---
+- hosts: test_server
+  become: yes
+  tasks:
+    - name: Copy Job1 directory to test server
+      copy:
+        src: /var/lib/jenkins/workspace/Job1
+        dest: /home/ansible_user
