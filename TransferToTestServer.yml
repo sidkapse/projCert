@@ -7,4 +7,4 @@
         src: /var/lib/jenkins/workspace/job1
         dest: /home/ansible_user
     - name: execute shell
-      shell: echo "`bash /home/ansible_user/job1/dockerbuild.sh`"
+      script: /home/ansible_user/job1/dockerbuild.sh
