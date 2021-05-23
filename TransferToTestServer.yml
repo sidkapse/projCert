@@ -4,5 +4,5 @@
   tasks:
     - name: Copy Job1 directory to test server
       copy:
-        src: /var/lib/jenkins/workspace/Job1
+        src: /var/lib/jenkins/workspace/job1
         dest: /home/ansible_user
