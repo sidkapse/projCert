@@ -8,9 +8,13 @@
         dest: /home/ansible_user
     - name: execute shell
       command: /home/ansible_user/job1/dockerbuild.sh
-
     - name: copy selenium jar
       copy:
         src: /home/ansible_user/job1/Selenium_PHP_Test.jar
+        dest: /tmp/selenium_test
+        remote_src: yes
+    - name: copy selenium selenium run shell
+      copy:
+        src: /home/ansible_user/job1/runSeleniumShell.sh
         dest: /tmp/selenium_test
         remote_src: yes
