@@ -1,6 +1,0 @@
----
-- hosts: test_server
-  become: yes
-  tasks:
-    - name: execute shell
-      command: /tmp/selenium_test/runSeleniumShell.sh
